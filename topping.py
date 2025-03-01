@@ -10,3 +10,8 @@ class ToppingList:
     if topping in self.list:
       return
     self.list.append(topping)
+  
+  def remove(self, topping: str):
+    topping = topping.strip().lower()
+    if topping in self.list:
+      self.list.remove(topping)
