@@ -6,3 +6,7 @@ class Pizza:
     if topping in self.toppings:
       return
     self.toppings.append(topping)
+  
+  def remove_topping(self, topping):
+    if topping in self.toppings:
+      self.toppings.remove()
